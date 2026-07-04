@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema Indisponível — SCA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: radial-gradient(ellipse at 50% 40%, #0f4a2a 0%, #051810 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .login-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(100,220,130,.18);
+      border-radius: 20px;
+      padding: 52px 44px 42px;
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 12px 50px rgba(0,0,0,.6);
+      text-align: center;
+      animation: fadeUp .55s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity:0; transform:translateY(28px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+    .login-icon {
+      width: 60px; height: 60px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 10px;
+      font-size: 34px;
+    }
+    .login-icon img { width: 60px; height: 60px; object-fit: contain; }
+    .login-brand {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 2.6rem; font-weight: 700;
+      color: #00e676; letter-spacing: 4px;
+    }
+    .login-subtitle {
+      font-size: .65rem; letter-spacing: 2.8px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.45);
+      margin-bottom: 28px;
+    }
+    .status-icone { font-size: 2.4rem; margin-bottom: 8px; }
+    .status-titulo {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.3rem; font-weight: 700;
+      color: #e63946;
+      margin-bottom: 10px; letter-spacing: 1px;
+    }
+    .mensagem {
+      color: rgba(245,255,250,.8);
+      font-size: .82rem;
+      line-height: 1.6;
+      margin-bottom: 1.4rem;
+      text-align: justify;
+    }
+    .btn-primary {
+      display: block; width: 100%; padding: 14px;
+      background: linear-gradient(135deg, #27ae60, #00e676);
+      border: none; border-radius: 11px;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.08rem; font-weight: 700;
+      color: #051810; cursor: pointer;
+      letter-spacing: 1.2px; text-decoration: none;
+      box-shadow: 0 4px 18px rgba(0,230,118,.38);
+      transition: transform .15s, box-shadow .15s;
+      margin-bottom: 8px;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 7px 24px rgba(0,230,118,.55); }
+    .btn-secondary {
+      display: block; width: 100%; padding: 12px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(0,230,118,.22);
+      border-radius: 11px;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      color: rgba(255,255,255,.7); cursor: pointer;
+      letter-spacing: 1px; text-decoration: none;
+      transition: all .2s;
+    }
+    .btn-secondary:hover { background: rgba(0,230,118,.1); border-color: rgba(0,230,118,.4); color: #00e676; }
+    .rodape {
+      margin-top: 1.4rem;
+      font-size: .62rem;
+      color: rgba(255,255,255,.12);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+<div class="login-card">
+  <div class="login-icon">
+    <img src="https://straightforward-pink-jthqgofxdv.edgeone.app/1774104885135.png" onerror="this.style.display='none'"/>
+  </div>
+  <div class="login-brand">SCA</div>
+  <div class="login-subtitle">Sistema de Consultoria<br>Ambiental</div>
+
+  <div class="status-icone">⚠️</div>
+  <div class="status-titulo">Sistema Indisponível</div>
+  <p class="mensagem">
+    O sistema está temporariamente fora do ar.
+    Para resolver, entre em contato com a nossa central de atendimento e regularize o seu acesso.
+  </p>
+
+  <a class="btn-primary" href="https://wa.me/5596991431959" target="_blank">
+    REGULARIZAR O ACESSO
+  </a>
+  <a class="btn-secondary" href="https://bioflorest.github.io/sca-empresa02/">
+    Tentar novamente
+  </a>
+
+  <div class="rodape">
+    Bioflorest LTDA | CNPJ: 46.695.182/0001-63<br>
+    © 2026 – Todos os direitos reservados.
+  </div>
+</div>
+</body>
+</html>
