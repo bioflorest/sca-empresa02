@@ -1,0 +1,18 @@
+name: Keep Supabase Alive
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping SCA Empresa 02
+        env:
+          SUPABASE_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNra3dheGJiZXlqdnJhenJtbmhwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMxNzI3NjIsImV4cCI6MjA5ODc0ODc2Mn0.B3JqOHK4sHj8hPnLqXa481fbtsq6-wfjAIkXlWhAGOI
+        run: |
+          curl -s -o /dev/null \
+            -H "apikey: $SUPABASE_KEY" \
+            https://ckkwaxbbeyjvrazrmnhp.supabase.co/rest/v1/
